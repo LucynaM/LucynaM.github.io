@@ -1,0 +1,7 @@
+$base-color-nr1: rgb(192,192,192);
+$base-color-nr2: #EFEFEF;
+$base-color-nr3: #B91B22; 
+$base-color-nr4: #2D2D2D; 
+$base-color-nr5: #5D3638; 
+$base-color-nr6: #737373; 
+$small-width: 480px;
