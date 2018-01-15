@@ -113,39 +113,13 @@ nav #nav-arrow.white-arrow {
 }
 
 #header-right2 {
-	background-color: $base-color-nr1;
-}
-
-#header-right2 div {
-	font-size: 0px;
-	width: 32%;
-	height: 100%;
-	position: static;
-	top: 0;
-	transform: translateY(0);
-	margin: 0;
-	right: 0;
-	display: inline-block;
-}
-#header-right2 div:nth-child(1) {
-	background-color: $base-color-nr3;
-}
-#header-right2 div:nth-child(3) {
-	float: right;	
-}
-#header-right2 div:nth-child(3) div {
-	width: 4%;
-	height: 100%;
-	float: left;
-}
-#header-right2 div:nth-child(3) div:nth-child(odd) {
 	background-color: $base-color-nr5;
 }
 
 #header-right3 i {
 	transform: rotate(-90deg);
 }
-#header-right1:hover i, #header-right3:hover i, #header-right4:hover i {
+#header-right1:hover i, #header-right2:hover i, #header-right3:hover i, #header-right4:hover i {
 	color: $base-color-nr3;
 	transition: .3s ease-in;
 }
@@ -302,7 +276,7 @@ section.portfolio div.col-sm-6:last-child {
 	background-color: $base-color-nr4;
 }
 
-.photo-portfolio, .graphics-portfolio, .about-portfolio, .layout-portfolio {
+.photo-portfolio, .graphics-portfolio, .storytelling-portfolio, .about-portfolio, .layout-portfolio {
   width: 100%;
  @include vertical-center;
   display: none; }
@@ -310,8 +284,38 @@ section.portfolio div.col-sm-6:last-child {
 section#photo figure, section#graphics figure, section#layout figure {
  @include horizontal-center;}
 
-/*Photography section - start*/
 
+/*About section - start*/
+.about-portfolio {
+  display: block; }
+
+section#about figure img {
+  max-width: 80%;
+  height: auto;
+  max-height: 70vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh; }
+
+#about.portfolio {
+	div.col-sm-6 {
+		div {
+			@include vertical-center;
+			@include horizontal-center;
+			padding: 30px;
+			h1 {
+				padding-bottom: 30px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/*About section - stop*/
+
+
+/*Photography section - start*/
  section#photo figure img {
   max-width: 80%;
   height: auto;
@@ -324,8 +328,8 @@ section#photo #wedding figure img {
 
 section#photo #painting figure img, section#photo #studio figure img, section#photo #abstraction figure img {
   max-height: 80vh; }
-
 /*Photography section - end*/
+
 
 /*Graphics section - start*/
 
@@ -334,8 +338,8 @@ section#photo #painting figure img, section#photo #studio figure img, section#ph
 	height: auto; 
 	max-height: 80vh;  
 }
-
 /*Graphics section - end*/
+
 
 /*Layout section - start*/
 section#layout figure img {
@@ -354,8 +358,9 @@ section#layout #business-card figure img {
 	padding-bottom: 2.5vh;}
 /*Layout section - end*/
 
-/*About section - start*/
-section#about div.col-md-6 {
+
+/*Storytelling section - start*/
+section#storytelling div.col-md-6 {
 	height: 95vh;
 	&:last-child {
 		background-color: $base-color-nr4;
@@ -370,29 +375,26 @@ section#about div.col-md-6 {
 	}
 }
 
-section#about div.col-md-6 div p span {
-	display:none;}
-
-section#about div.col-md-6 div.about-portfolio {
+section#storytelling div.col-md-6 div.storytelling-portfolio {
 	width: 100%;
 	@include vertical-center;
 	@include horizontal-center;
 	color: #fff;
 	display: block;}
 
-section#about figure img {
+section#storytelling figure img {
 	max-width: 80%;
 	height: auto;
 	max-height: 45vh;
 	padding-top: 2.5vh;
 	padding-bottom: 2.5vh; }
 
-section#about figure figcaption {
+section#storytelling figure figcaption {
 	text-transform: uppercase;
 	font-weight: 700;
-	letter-spacing: 1px;
-	padding-bottom: 3vh; }
-/*About section - stop*/
+	letter-spacing: 1px; }
+/*Storytelling section - stop*/
+
 
 /*Section-arrows - stop*/
 #arrow-controls {

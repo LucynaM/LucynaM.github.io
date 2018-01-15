@@ -115,37 +115,12 @@ nav #nav-arrow.white-arrow {
   background-color: #EFEFEF; }
 
 #header-right2 {
-  background-color: silver; }
-
-#header-right2 div {
-  font-size: 0px;
-  width: 32%;
-  height: 100%;
-  position: static;
-  top: 0;
-  transform: translateY(0);
-  margin: 0;
-  right: 0;
-  display: inline-block; }
-
-#header-right2 div:nth-child(1) {
-  background-color: #B91B22; }
-
-#header-right2 div:nth-child(3) {
-  float: right; }
-
-#header-right2 div:nth-child(3) div {
-  width: 4%;
-  height: 100%;
-  float: left; }
-
-#header-right2 div:nth-child(3) div:nth-child(odd) {
-  background-color: #5D3638; }
+  background-color: #D4D4D4; }
 
 #header-right3 i {
   transform: rotate(-90deg); }
 
-#header-right1:hover i, #header-right3:hover i, #header-right4:hover i {
+#header-right1:hover i, #header-right2:hover i, #header-right3:hover i, #header-right4:hover i {
   color: #B91B22;
   transition: .3s ease-in; }
 
@@ -274,7 +249,7 @@ section.portfolio div.col-sm-6 ul a.current {
 section.portfolio div.col-sm-6:last-child {
   background-color: #2D2D2D; }
 
-.photo-portfolio, .graphics-portfolio, .about-portfolio, .layout-portfolio {
+.photo-portfolio, .graphics-portfolio, .storytelling-portfolio, .about-portfolio, .layout-portfolio {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -287,6 +262,32 @@ section#photo figure, section#graphics figure, section#layout figure {
   margin: auto;
   text-align: center; }
 
+/*About section - start*/
+.about-portfolio {
+  display: block; }
+
+section#about figure img {
+  max-width: 80%;
+  height: auto;
+  max-height: 70vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh; }
+
+#about.portfolio div.col-sm-6 div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  padding: 30px; }
+  #about.portfolio div.col-sm-6 div h1 {
+    padding-bottom: 30px; }
+  #about.portfolio div.col-sm-6 div p {
+    font-size: 16px; }
+
+/*About section - stop*/
 /*Photography section - start*/
 section#photo figure img {
   max-width: 80%;
@@ -326,12 +327,12 @@ section#layout #business-card figure img {
   padding-bottom: 2.5vh; }
 
 /*Layout section - end*/
-/*About section - start*/
-section#about div.col-md-6 {
+/*Storytelling section - start*/
+section#storytelling div.col-md-6 {
   height: 95vh; }
-  section#about div.col-md-6:last-child {
+  section#storytelling div.col-md-6:last-child {
     background-color: #2D2D2D; }
-  section#about div.col-md-6 div {
+  section#storytelling div.col-md-6 div {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -344,10 +345,7 @@ section#about div.col-md-6 {
     padding-right: 5vh;
     text-indent: 5vh; }
 
-section#about div.col-md-6 div p span {
-  display: none; }
-
-section#about div.col-md-6 div.about-portfolio {
+section#storytelling div.col-md-6 div.storytelling-portfolio {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -359,20 +357,19 @@ section#about div.col-md-6 div.about-portfolio {
   color: #fff;
   display: block; }
 
-section#about figure img {
+section#storytelling figure img {
   max-width: 80%;
   height: auto;
   max-height: 45vh;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh; }
 
-section#about figure figcaption {
+section#storytelling figure figcaption {
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
-  padding-bottom: 3vh; }
+  letter-spacing: 1px; }
 
-/*About section - stop*/
+/*Storytelling section - stop*/
 /*Section-arrows - stop*/
 #arrow-controls {
   position: absolute;

@@ -8,11 +8,11 @@ $(function(){
 	if (windowWidth < 480) {
 			$(".header-right").removeClass("col-xs-6"); //usuwanie bootstrapowej klasy dzielącej okno na 2
 			$(".header-right").eq(1).hide(); //ukrywanie drugiego bloku prawej strony headera
-			$("section#about").find(".col-md-6").eq(0).hide(); 
+			$("section#storytelling").find(".col-md-6").eq(0).hide(); 
 		} else {
 			$(".header-right").addClass("col-xs-6");
 			$(".header-right").eq(1).show();
-			$("section#about").find(".col-md-6").eq(0).show();
+			$("section#storytelling").find(".col-md-6").eq(0).show();
 		}
 		
 /*zmiany wielkosci fontow dla malych bloków headera*/
@@ -46,12 +46,12 @@ $(function(){
 		if (windowWidth < 480) {
 			$(".header-right").removeClass("col-xs-6"); //usuwanie bootstrapowej klasy dzielącej okno na 2
 			$(".header-right").eq(1).hide(); //ukrywanie drugiego bloku prawej strony headera
-			$("section#about").find(".col-md-6").eq(0).hide(); 
+			$("section#storytelling").find(".col-md-6").eq(0).hide(); 
 		
 		} else {
 			$(".header-right").addClass("col-xs-6");
 			$(".header-right").eq(1).show();
-			$("section#about").find(".col-md-6").eq(0).show();
+			$("section#storytelling").find(".col-md-6").eq(0).show();
 		}
 		
 /*zmiany wielkosci fontow dla malych bloków headera*/
